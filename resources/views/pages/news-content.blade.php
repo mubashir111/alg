@@ -23,7 +23,7 @@
                     Lorem ipsum dolor sit amet consectetur. Faucibus adipiscing posuere sem purus faucibus pretium.
                 </h3>
                 <div class="w-full h-[500px] rounded-[16px] overflow-hidden">
-                    <img src="{{ asset('HeroSection-bg-image.png') }}" alt="Image" class='w-full h-full object-cover' />
+                    <img src="{{ asset('HeroSection-bg-image.jpeg') }}" alt="Image" class='w-full h-full object-cover' />
                 </div>
             </div>
         </div>

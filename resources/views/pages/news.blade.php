@@ -32,7 +32,7 @@
                 <div class='grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-10'>
                     <div class='lg:col-span-2 w-full flex flex-col gap-6 md:gap-8 xl:gap-10'>
                         <div class='h-[250px] lg:h-[505px] xl:h-[540px] w-full rounded-[16px] overflow-hidden'>
-                            <img src="{{ asset('HeroSection-bg-image.png') }}" alt="Image" class='w-full h-full object-cover' />
+                            <img src="{{ asset('HeroSection-bg-image.jpeg') }}" alt="Image" class='w-full h-full object-cover' />
                         </div>
                         <div class='flex flex-col gap-4 md:gap-6 xl:gap-8'>
                             <div class='flex flex-col gap-3 xl:gap-4'>
@@ -99,19 +99,19 @@
                 @php
                 $allNews = [
                     [
-                        "image" => "/HeroSection-bg-image.png",
+                        "image" => "/HeroSection-bg-image.jpeg",
                         "date" => "Nov 18, 2025",
                         "heading" => "Airline fleet moves: narrowbodies repurposed for high-yield cargo runs",
                         "description" => "Airlines are reallocating narrowbody frames to priority cargo routes, shifting capacity away from belly space and changing the balance of available",
                     ],
                     [
-                        "image" => "/HeroSection-bg-image.png",
+                        "image" => "/HeroSection-bg-image.jpeg",
                         "date" => "Nov 11, 2025",
                         "heading" => "Tech in practice: predictive maintenance reduces ground time",
                         "description" => "Operators using predictive engine and chassis monitoring report faster interventions and lower unscheduled failures. That lowers total",
                     ],
                     [
-                        "image" => "/HeroSection-bg-image.png",
+                        "image" => "/HeroSection-bg-image.jpeg",
                         "date" => "Nov 04, 2025",
                         "heading" => "Wholesaler wins: digital rate transparency changes negotiation power",
                         "description" => "Open wholesale platforms exposing live rates are compressing the traditional broker margin model and forcing faster quote turnaround...",
@@ -120,7 +120,7 @@
 
                 $industryNews = [
                     [
-                        "image" => "/HeroSection-bg-image.png",
+                        "image" => "/HeroSection-bg-image.jpeg",
                         "date" => "Nov 11, 2025",
                         "heading" => "Tech in practice: predictive maintenance reduces ground time",
                         "description" => "Operators using predictive engine and chassis monitoring report faster interventions and lower unscheduled failures. That lowers total",
@@ -129,7 +129,7 @@
 
                 $pressReleases = [
                     [
-                        "image" => "/HeroSection-bg-image.png",
+                        "image" => "/HeroSection-bg-image.jpeg",
                         "date" => "Nov 04, 2025",
                         "heading" => "Wholesaler wins: digital rate transparency changes negotiation power",
                         "description" => "Open wholesale platforms exposing live rates are compressing the traditional broker margin model and forcing faster quote turnaround...",
