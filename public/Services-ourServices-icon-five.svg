@@ -1,0 +1,17 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" rx="8" fill="#F0F5F7"/>
+<mask id="mask0_3680_2751" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="12" width="32" height="32">
+<path d="M44 12H12V44H44V12Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3680_2751)">
+<path d="M28.4907 14.8671L40.4907 19.6671C40.9574 19.8537 41.3307 20.4137 41.3307 20.9071V25.3337C41.3307 26.0671 40.7307 26.6671 39.9974 26.6671H15.9974C15.2641 26.6671 14.6641 26.0671 14.6641 25.3337V20.9071C14.6641 20.4137 15.0374 19.8537 15.5041 19.6671L27.5041 14.8671C27.7707 14.7604 28.2241 14.7604 28.4907 14.8671Z" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.3307 41.3333H14.6641V37.3333C14.6641 36.6 15.2641 36 15.9974 36H39.9974C40.7307 36 41.3307 36.6 41.3307 37.3333V41.3333Z" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.332 36.0013V26.668" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.6641 36.0013V26.668" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 36.0013V26.668" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.332 36.0013V26.668" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.6641 36.0013V26.668" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.332 41.334H42.6654" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 23.334C29.1045 23.334 30 22.4386 30 21.334C30 20.2294 29.1045 19.334 28 19.334C26.8955 19.334 26 20.2294 26 21.334C26 22.4386 26.8955 23.334 28 23.334Z" fill="#103440" stroke="#103440" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,93 @@
+/* ============================
+   OpenSauceTwo Font Family
+   ============================ */
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('/fonts/OpenSauceTwo/WOFF2/OpenSauceTwo-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================
+   Transducer Font Family
+   ============================ */
+@font-face {
+    font-family: 'Transducer';
+    src: url('/fonts/Transducer/WOFF2/Transducer-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('/fonts/Transducer/WOFF2/Transducer-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('/fonts/Transducer/WOFF2/Transducer-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('/fonts/Transducer/WOFF2/Transducer-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
