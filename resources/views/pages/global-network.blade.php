@@ -79,7 +79,7 @@
 @section('content')
 <div class="w-full flex flex-col bg-[#FFFFFF] global-network-page relative">
   <div class="relative overflow-hidden z-0">
-    <div class="absolute Page-background -z-10 w-full h-[500px]"></div>
+    <div class="absolute Page-background -z-10 w-full h-full"></div>
     <div class="Common-padding flex flex-col items-center">
       <div class="w-full max-w-[1700px] pt-[120px] md:pt-[140px] xl:pt-[160px] pb-[70px] md:pb-[80px] xl:pb-[100px] flex flex-col gap-[50px] md:gap-[60px] xl:gap-[80px]">
         <div class="flex flex-col gap-3 md:gap-4 xl:gap-5">
