@@ -9,11 +9,11 @@
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="black">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
     <!-- Font face declarations -->
-    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}?v=2">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}?v=3">
     <!-- Link the copied CSS files -->
-    <link rel="stylesheet" href="{{ asset('css/globals.css') }}?v=2">
-    <link rel="stylesheet" href="{{ asset('css/design.css') }}?v=2">
-    <link rel="stylesheet" href="{{ asset('css/background.css') }}?v=2">
+    <link rel="stylesheet" href="{{ asset('css/globals.css') }}?v=3">
+    <link rel="stylesheet" href="{{ asset('css/design.css') }}?v=3">
+    <link rel="stylesheet" href="{{ asset('css/background.css') }}?v=3">
 
     <!-- Tailwind CSS (Play CDN for arbitrary values support) -->
     <script src="https://cdn.tailwindcss.com"></script>

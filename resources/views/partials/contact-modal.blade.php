@@ -89,7 +89,7 @@
                         <textarea id="message" name="message" class="w-full h-[120px] md:h-[90px] Input-field resize-none"></textarea>
                     </div>
                 </div>
-                <button type="submit" id="submit-btn" class="w-full py-3 px-6 font-normal tracking-[0.2px] Small-text Form-button">
+                <button type="submit" id="submit-btn" class="w-full py-3 px-6 font-normal tracking-[0.2px] Small-text Form-button bg-[#36A5C2] text-white hover:bg-[#103440] rounded-[8px] transition-all duration-300 flex items-center justify-center cursor-pointer">
                     Send Message
                 </button>
             </form>
