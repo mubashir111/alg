@@ -159,7 +159,7 @@
                     <button onclick="openContactModal()" class='w-fit py-3 px-6 font-normal Medium-text tracking-[0.2px] BD-button'>
                         Connect with us
                     </button>
-                    <a href="{{ asset('/ALG-Corporate%20Profile.pdf') }}" download="ALG-Corporate Profile.pdf" class='w-fit py-3 px-6 font-normal Medium-text tracking-[0.2px] Border-button'>
+                    <a href="{{ asset('ALG-Corporate-Profile.pdf') }}" download="ALG-Corporate-Profile.pdf" class='w-fit py-3 px-6 font-normal Medium-text tracking-[0.2px] Border-button'>
                         Download Company Profile
                     </a>
                 </div>
