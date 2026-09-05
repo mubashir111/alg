@@ -1,5 +1,5 @@
-<div id="contact-modal-overlay" class="fixed inset-0 bg-[#0D283157] backdrop-blur-[2px] transition-all duration-300 opacity-0 invisible" onclick="closeContactModal()"></div>
-<div id="contact-modal-drawer" class="fixed h-screen w-full top-0 right-0 md:max-w-[450px] py-4 px-2.5 md:px-4 transition-transform duration-300 ease-in-out z-[210] translate-x-full">
+<div id="contact-modal-overlay" class="fixed inset-0 bg-[#0D283157] backdrop-blur-[2px] transition-all duration-300 opacity-0 invisible z-[99999]" onclick="closeContactModal()"></div>
+<div id="contact-modal-drawer" class="fixed h-screen w-full top-0 right-0 md:max-w-[450px] py-4 px-2.5 md:px-4 transition-transform duration-300 ease-in-out z-[100000] translate-x-full">
     <div class="h-full w-full pt-5 xl:pt-6 pb-8 xl:pb-10 px-3 md:px-5 xl:px-6 flex flex-col gap-5 bg-white rounded-[16px]">
         <div class="w-full pb-5 border-b-[2px] border-[#F0F5F7] flex gap-5 items-center justify-between">
             <p class="font-transducer font-normal Large-text text-[#103440] tracking-[-0.5px] uppercase">
@@ -20,7 +20,7 @@
                             </div>
                             <label for="name" class="Label-text">Name *</label>
                         </div>
-                        <input type="text" id="name" name="name" class="Input-field" required />
+                        <input type="text" id="name" name="name" class="w-full Input-field" required />
                     </div>
                     <!-- Company -->
                     <div class="w-full flex flex-col gap-1.5">
@@ -30,7 +30,7 @@
                             </div>
                             <label for="company" class="Label-text">Company</label>
                         </div>
-                        <input type="text" id="company" name="company" class="Input-field" />
+                        <input type="text" id="company" name="company" class="w-full Input-field" />
                     </div>
                     <!-- Email -->
                     <div class="w-full flex flex-col gap-1.5">
@@ -40,7 +40,7 @@
                             </div>
                             <label for="email" class="Label-text">Email *</label>
                         </div>
-                        <input type="email" id="email" name="email" class="Input-field" required />
+                        <input type="email" id="email" name="email" class="w-full Input-field" required />
                     </div>
                     <!-- Telephone -->
                     <div class="w-full flex flex-col gap-1.5">
@@ -50,7 +50,7 @@
                             </div>
                             <label for="telephone" class="Label-text">Telephone *</label>
                         </div>
-                        <input type="tel" id="telephone" name="telephone" class="Input-field" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required />
+                        <input type="tel" id="telephone" name="telephone" class="w-full Input-field" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required />
                     </div>
                     <!-- Country -->
                     <div class="w-full flex flex-col gap-1.5 relative">
@@ -61,7 +61,7 @@
                             <label for="country" class="Label-text">Country</label>
                         </div>
                         <!-- Custom Select -->
-                        <div id="country-select" class="Input-field flex items-center justify-between cursor-pointer" onclick="toggleCountryDropdown(event)">
+                        <div id="country-select" class="w-full Input-field flex items-center justify-between cursor-pointer" onclick="toggleCountryDropdown(event)">
                             <span id="country-selected-text" class="text-[#ADBAC0]">Select Country</span>
                             <div id="country-dropdown-icon" class="transition-transform duration-300">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg>
@@ -86,7 +86,7 @@
                             </div>
                             <label for="message" class="Label-text">Message</label>
                         </div>
-                        <textarea id="message" name="message" class="h-[120px] md:h-[90px] Input-field"></textarea>
+                        <textarea id="message" name="message" class="w-full h-[120px] md:h-[90px] Input-field resize-none"></textarea>
                     </div>
                 </div>
                 <button type="submit" id="submit-btn" class="w-full py-3 px-6 font-normal tracking-[0.2px] Small-text Form-button">
@@ -171,7 +171,7 @@
         const overlay = document.getElementById("contact-modal-overlay");
         const drawer = document.getElementById("contact-modal-drawer");
         overlay.classList.remove("opacity-0", "invisible");
-        overlay.classList.add("opacity-100", "visible", "z-[200]");
+        overlay.classList.add("opacity-100", "visible");
         drawer.classList.remove("translate-x-full");
         drawer.classList.add("translate-x-0");
     }
@@ -179,7 +179,7 @@
     function closeContactModal() {
         const overlay = document.getElementById("contact-modal-overlay");
         const drawer = document.getElementById("contact-modal-drawer");
-        overlay.classList.remove("opacity-100", "visible", "z-[200]");
+        overlay.classList.remove("opacity-100", "visible");
         overlay.classList.add("opacity-0", "invisible");
         drawer.classList.remove("translate-x-0");
         drawer.classList.add("translate-x-full");

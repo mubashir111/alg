@@ -527,14 +527,14 @@
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
-  z-index: 210;
+  z-index: 100000;
 }
 
 #panelOverlay.show {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  z-index: 200;
+  z-index: 99999;
 }
 </style>
 @endpush

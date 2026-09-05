@@ -298,8 +298,10 @@
 }
 
 .Input-field {
+  box-sizing: border-box;
   border: 1px solid #1034401A;
   width: 100%;
+  font-family: inherit;
   font-weight: 400;
   font-size: 12px;
   line-height: 15.4px;
@@ -308,13 +310,41 @@
   background-color: #F5F8FA;
   border-radius: 8px;
   outline: none;
+  transition: border-color 0.2s ease-in-out;
   @media (min-width: 768px) {
       font-size: 13px;
       line-height: 16.4px;
   } 
 }
+.Input-field:focus {
+  border-color: #36A5C2;
+}
+textarea.Input-field {
+  resize: none;
+}
 .Input-field::placeholder {
   color: #ADBAC0;
+}
+
+.Form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #FFFFFF;
+  background-color: #36A5C2;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Form-button:hover {
+  background-color: #103440;
+  transform: scale(1.02);
+}
+.Form-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .Error-text {

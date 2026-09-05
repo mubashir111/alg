@@ -25,13 +25,17 @@
     <!-- Brand Animation -->
     <div class='flex flex-col items-center'>
         <div class='w-full max-w-[1700px] py-8 md:py-10 flex flex-col'>
+            @php
+                $brandLogosLine1 = ['cebuPacificAir', 'sichuanAirlines', 'dhl', 'challengeGroup', 'unitedAirlines', 'latamAirlines', 'cargoluxAirlines', 'dsv', 'etihad', 'expeditors'];
+                $brandLogosLine2 = ['westjet', 'taag', 'anaAirlines', 'americanAirlines', 'chinaAirlines', 'magmaAviation', 'jas', 'kuehneNagel', 'nipponExpress', 'yusenLogistics'];
+            @endphp
             <!-- BrandAnimationOne -->
             <div class="relative w-full overflow-hidden mb-4">
                 <div class="flex AminationOne-scroll">
                     @for($i = 0; $i < 4; $i++)
-                        @foreach(['one', 'two', 'three', 'four', 'five', 'six'] as $img)
+                        @foreach($brandLogosLine1 as $img)
                             <div class="shrink-0">
-                                <img src="{{ asset('BrandAnimationOne-image-' . $img . '.svg') }}" alt="Icon" class="w-[150px] md:w-[160px] lg:w-[180px] xl:w-[200px]" />
+                                <img src="{{ asset('BrandAnimation-' . $img . '.svg') }}" alt="Brand Logo" class="w-[150px] md:w-[160px] lg:w-[180px] xl:w-[200px]" />
                             </div>
                         @endforeach
                     @endfor
@@ -41,9 +45,9 @@
             <div class="relative w-full overflow-hidden">
                 <div class="flex AminationTwo-scroll">
                     @for($i = 0; $i < 4; $i++)
-                        @foreach(['one', 'two', 'three', 'four', 'five', 'six', 'seven'] as $img)
+                        @foreach($brandLogosLine2 as $img)
                             <div class="shrink-0">
-                                <img src="{{ asset('BrandAnimationTwo-image-' . $img . '.svg') }}" alt="Icon" class="w-[150px] md:w-[160px] lg:w-[180px] xl:w-[200px]" />
+                                <img src="{{ asset('BrandAnimation-' . $img . '.svg') }}" alt="Brand Logo" class="w-[150px] md:w-[160px] lg:w-[180px] xl:w-[200px]" />
                             </div>
                         @endforeach
                     @endfor
@@ -68,7 +72,7 @@
                             ['icon' => 'one', 'num' => '135+', 'label' => 'Airline Partners', 'bg' => '#7FC5D8'],
                             ['icon' => 'two', 'num' => '100', 'label' => 'Offices', 'bg' => '#36A5C2'],
                             ['icon' => 'three', 'num' => '60+', 'label' => 'Countries', 'bg' => '#26758B'],
-                            ['icon' => 'four', 'num' => '$500M+', 'label' => 'Annual Sales', 'bg' => '#174958'],
+                            ['icon' => 'four', 'num' => '$700M+', 'label' => 'Annual Sales', 'bg' => '#174958'],
                             ['icon' => 'five', 'num' => '550,000+', 'label' => 'AWBs Annually', 'bg' => '#103440'],
                         ];
                     @endphp
@@ -114,7 +118,7 @@
                         ['icon' => 'two', 'title' => 'Service That Performs.', 'desc' => 'Structured support aligned to airline and freight forwarder requirements, delivering clarity, responsiveness and consistent commercial execution.'],
                         ['icon' => 'three', 'title' => 'Built by Air Cargo Experts.', 'desc' => 'A global team of experienced cargo professionals combining commercial understanding with local market intelligence.'],
                         ['icon' => 'four', 'title' => 'Data-Led Commercial Strategy.', 'desc' => 'Dynamic sales, pricing and market intelligence designed to support stronger commercial outcomes.'],
-                        ['icon' => 'five', 'title' => 'Transparent. Accountable. Trusted.', 'desc' => 'Clear reporting, disciplined governance and a financially robust operating model built around long-term airline partnerships.'],
+                        ['icon' => 'five', 'title' => '<span class="inline-block whitespace-nowrap">Transparent. Accountable.</span><br /><span>Trusted.</span>', 'desc' => 'Clear reporting, disciplined governance and a financially robust operating model built around long-term airline partnerships.'],
                         ['icon' => 'six', 'title' => 'Solutions That Drive Growth.', 'desc' => 'Tailored commercial strategies designed to strengthen performance, improve market penetration and unlock opportunity.'],
                     ];
                 @endphp
@@ -126,8 +130,8 @@
                             <img src="{{ asset('Results-icon-' . $res['icon'] . '.svg') }}" alt="Icon" class='w-[56px]' />
                         </div>
                         <div class='flex flex-col gap-4 md:gap-5 xl:gap-6'>
-                            <h5 class='max-w-[260px] font-transducer font-medium Large-text text-[#36A5C2] tracking-[-1px] uppercase'>
-                                {{ $res['title'] }}
+                            <h5 class='max-w-full sm:max-w-[350px] xl:max-w-[370px] font-transducer font-medium Large-text text-[#36A5C2] tracking-[-1px] uppercase'>
+                                {!! $res['title'] !!}
                             </h5>
                             <p class='max-w-[350px] xl:max-w-[370px] font-normal Medium-text text-[#667980]'>
                                 {{ $res['desc'] }}

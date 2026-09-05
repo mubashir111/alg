@@ -7,6 +7,9 @@
         <div class='absolute Page-background -z-10 w-full h-full'></div>
         <div class='Common-padding flex flex-col items-center'>
             <div class='w-full max-w-[1700px] pt-[120px] md:pt-[140px] xl:pt-[160px] pb-[70px] md:pb-[80px] xl:pb-[100px] flex flex-col gap-3 md:gap-4 xl:gap-5'>
+                <p class='font-transducer font-medium Medium-text text-[#36A5C2] uppercase'>
+                    WHAT IS A GSSA?
+                </p>
                 <div class='flex flex-col font-transducer font-normal Main-heading tracking-[-2.5px] uppercase'>
                     <div class='Animate-heading'>
                         <h3 class='flex flex-col'>
@@ -29,6 +32,9 @@
     <div class='Common-padding flex flex-col items-center'>
         <div class='w-full max-w-[1700px] py-[70px] md:py-[80px] xl:py-[100px] flex flex-col gap-[80px] md:gap-[100px] xl:gap-[120px]'>
             <div class='flex flex-col gap-8 xl:gap-10 font-normal Large-text text-[#667980]'>
+                <p class='font-transducer font-medium Large-text text-[#36A5C2] tracking-[-1px] uppercase'>
+                    WHAT IS A GSSA?
+                </p>
                 <p class='max-w-[630px] md:max-w-[740px] xl:max-w-[840px] font-normal Large-heading'>
                     <span class='text-[#36A5C2]'>A General Sales & Service Agent (GSSA)</span> enables airlines to access markets without the cost of building local sales and operational infrastructure.
                 </p>
