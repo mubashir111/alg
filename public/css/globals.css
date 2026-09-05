@@ -10,8 +10,10 @@
 }
 
 
+.Hover-effect {
+  transition: all 0.2s ease-in-out;
+}
 .Hover-effect:hover {
-  transform: all;
   transition: all 0.2s ease-in-out;
 }
 

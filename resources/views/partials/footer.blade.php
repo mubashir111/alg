@@ -46,7 +46,7 @@
                         </p>
                         <div class='flex flex-col gap-2'>
                             @foreach($quickLinks as $item)
-                                <a href="{{ url($item['href']) }}" class="w-fit font-normal Medium-text text-[#103440] transition-transform duration-200 hover:scale-105 origin-left cursor-pointer">
+                                <a href="{{ url($item['href']) }}" class="w-fit font-normal Medium-text hover:font-semibold text-[#103440] Hover-effect cursor-pointer">
                                     {{ $item['name'] }}
                                 </a>
                             @endforeach
@@ -58,10 +58,10 @@
                         </p>
                         <div class='flex flex-col gap-5 sm:gap-12 md:gap-14 xl:gap-16'>
                             <div class='flex flex-col gap-2'>
-                                <a href="tel:+4401332850021" class='w-fit font-normal Medium-text text-[#103440] transition-transform duration-200 hover:scale-105 origin-left cursor-pointer'>
+                                <a href="tel:+4401332850021" class='w-fit font-normal Medium-text hover:font-semibold text-[#103440] Hover-effect cursor-pointer'>
                                     +44 01332 850021
                                 </a>
-                                <a href="mailto:info@airlogisticsgroup.com" class='w-fit font-normal Medium-text text-[#103440] transition-transform duration-200 hover:scale-105 origin-left cursor-pointer'>
+                                <a href="mailto:info@airlogisticsgroup.com" class='w-fit font-normal Medium-text hover:font-semibold text-[#103440] Hover-effect cursor-pointer'>
                                     info@airlogisticsgroup.com
                                 </a>
                             </div>
@@ -81,7 +81,7 @@
                     </p>
                     <div class='flex gap-6 items-center'>
                         @foreach($footLinks as $item)
-                            <a href="{{ url($item['href']) }}" class="w-fit font-normal Little-text text-[#103440] transition-transform duration-200 hover:scale-105 origin-left cursor-pointer">
+                            <a href="{{ url($item['href']) }}" class="w-fit font-normal Little-text hover:font-semibold text-[#103440] Hover-effect cursor-pointer">
                                 {{ $item['name'] }}
                             </a>
                         @endforeach
