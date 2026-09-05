@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'ALG - Air Logistics Group')</title>
     <meta name="description" content="Air Logistics Group">
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="black">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=4">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=4">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}?v=4">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#103440">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#103440">
     <!-- Font face declarations -->
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}?v=3">
     <!-- Link the copied CSS files -->
