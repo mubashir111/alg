@@ -1,0 +1,533 @@
+{
+  "HYD": {
+    "address": "TBC"
+  },
+  "CCU": {
+    "address": "TBC"
+  },
+  "AMD": {
+    "address": "TBC"
+  },
+  "BLR": {
+    "address": "TBC"
+  },
+  "JED": {
+    "address": "TBC"
+  },
+  "RUH": {
+    "address": "TBC"
+  },
+  "SAO": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, AV. DR. CARDOSO DE MELO, VILA OLÍMPIA, SÃO PAULO-SP, 04548-005",
+    "phone": "+55 11 38818735"
+  },
+  "BUE": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, CERRITO 782, OFFICE 782, 5TH FLOOR, BUENOS AIRES, ARGENTINA",
+    "phone": "+54 (11) 5252-9040"
+  },
+  "TPE": {
+    "address": "3F, No.230, SEC. 2, Chang’An East Road, Zhongshan District Taipei Taiwan",
+    "phone": "(+886) 2 2100 8800",
+    "email": "william.chen@airlogisticsgroup.com"
+  },
+  "SKT": {
+    "address": "Kashmir Mall Near Passport office, Kashmir Road Sialkot, Pakistan",
+    "phone": "+92 52 355 2824",
+    "email": "sales-SKT@airlogisticsgroup.com"
+  },
+  "MUX": {
+    "address": "Office # F01, Indus Tower, Abdali Road, Multan - Pakistan",
+    "phone": "+92 61 450 1737",
+    "email": "sales-MUX@airlogisticsgroup.com"
+  },
+  "LYP": {
+    "address": "P-50,1st Floor, Suite #1 Chenab Market, Medina Town, Faisalabad",
+    "phone": "+92 41 872 8072",
+    "email": "muhammad.naeem@airlogisticsgroup.com"
+  },
+  "KTM": {
+    "address": "Starlight Building, Sahayogi Nagar, Janata Sadak, KTM32, 44600 G. P. O Box 12713, Kathmandu, Nepal.",
+    "phone": "+977 14155 365",
+    "email": "ktm@airlogisticsgroup.com"
+  },
+  "RGN": {
+    "address": "Unit-07, 20th Floor, Myanmar Center Office Tower (1), 192 Kaba Aye Pagoda Road, Bahan Township, Yangon, Myanmar",
+    "phone": "(+95) 925 109 9780",
+    "email": "nay.lin@airlogisticsgroup.com"
+  },
+  "MLE": {
+    "address": "Roashanee Magu, Male, Maldives",
+    "phone": "+960 9993067",
+    "email": "ismail.shareef@airborne-intl.com"
+  },
+  "MFM": {
+    "address": "RM101, THE COMMERCIAL BUILDING OF AIRPORT ROAD, MACAU",
+    "email": "martin.ngai@airlogisticsgroup.com"
+  },
+  "AMM": {
+    "address": "Air Logistics Group Jordan, 74 Wasfi Altal Street, 5th floor, Amman, Jordan",
+    "phone": "+962 6 5657 888",
+    "email": "maher.qishta@airlogisticsgroup.com"
+  },
+  "THO": {
+    "address": "2F NISSHOKAN BUILDING, 1-10 NIHONBASHI KABUTOCHO CHUO-KU, TOKYO 103-0026, JAPAN",
+    "phone": "(+81) 3 5645 7820",
+    "email": "algjapan@airlogisticsgroup.com"
+  },
+  "PNH": {
+    "address": "Address  FLATIRON BY MERIDIAN, 14th Floor, Unit FO-1406, Street 102, Sangkat Srah Chak, Khan Daun Penh Phnom Penh, Cambodia",
+    "phone": "(+84) 936736969",
+    "email": "alex.hao@airlogisticsgroup.com"
+  },
+  "BWN": {
+    "address": "TBC"
+  },
+  "DAC": {
+    "address": "Hasan Center, 9th Floor, House # 58/B, Road # 131, Gulshan-1, Dhaka-1212, Bangladesh",
+    "phone": "(+880) 248812830-31",
+    "email": "shifa.qadeer@airlogisticsgroup.com"
+  },
+  "LJU": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, Zg. Brnik 130 A,, SI-4210 Brnik-Aerodrom,, Slovenia"
+  },
+  "BEG": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, Robno skladište Aerodroma Beograd,, Sprat V/5 .3,, RS-11271 Surčin, Serbia"
+  },
+  "OTP": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, St. Aurel Vlaicu 9, Otopeni, Romania"
+  },
+  "RMO": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, MD-2012, str. Maria Cebotari 37, mun Chisinau, Republica Moldiva"
+  },
+  "SOF": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, 6, Kaloyan str, floor 1, office 105,, BG - Sofia , 1000, Bulgaria"
+  },
+  "AKL": {
+    "address": "177 MONTGOMERIE ROAD AUCKLAND, NEW ZEALAND",
+    "email": "reservation.akl@airlogisticsgroup.com"
+  },
+  "AMS": {
+    "address": "AIR LOGISTICS B.V UIVERWEG 2 1118 DS SCHIPHOL THE NETHERLANDS",
+    "phone": "+31 20 648 4861",
+    "email": "ams@airlogisticsgroup.com",
+    "website": "https://www.airlogisticsgroup.com",
+    "company": "AIR LOGISTICS B.V UIVERWEG 2 1118 DS SCHIPHOL THE NETHERLANDS"
+  },
+  "ARN": {
+    "address": "NORTH AIR LOGISTICS, BOX 96, ARLANDA, S-190 45, STOCKHOLM, SWEDEN",
+    "phone": "(+46) 8 593 600 85",
+    "email": "sto@northairlogistics.se",
+    "company": "NORTH AIR LOGISTICS"
+  },
+  "ATH": {
+    "address": "PR 19013, Anavyssos, Greece",
+    "phone": "+30 22 990 41295",
+    "email": "ath@airlogisticsgroup.com",
+    "website": "https://www.airlogisticsgroup.com"
+  },
+  "ATL": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, 4200 SOUTH CARGO DRIVE, ATALNTA, GA 30320, USA"
+  },
+  "BCN": {
+    "address": "CARRER ALTA RIBARGORZA, 20, 3 PLANTA, PARC DE NEGOCIS MAS BLAU II, EL PRAT DE LLOBREGAT, 08820 BARCELONA, SPAIN",
+    "phone": "(+34) 93 378 9100",
+    "email": "reservas@airlogisticsgroup.com"
+  },
+  "BKK": {
+    "address": "999 Moo 7, Room No.509, 5th Floor, Free Zone Operator Building (BFZ), Racha Thewa, Bang Phli, Samutprakarn 10540",
+    "phone": "+662 134 4073"
+  },
+  "BNE": {
+    "partner": "Partner Office",
+    "address": "C/O ACP Worldwide Menzies Aviation Brisbane Cargo Centre 1 Rosa Street Brisbane Airport QLD 4008",
+    "email": "qldsales@acpworldwide.com.au"
+  },
+  "BOM": {
+    "address": "SUITE NO. 203-204, A WING, 2ND FLOOR, 119 BUSINESS POINT NEAR SAHAR CARGO COMPLEX, ANDHERI EAST, MUMBAI - 400 099",
+    "phone": "(+91) 22 2681 7480",
+    "email": "india@airlogisticsgroup.co.in"
+  },
+  "BRU": {
+    "address": "BEDRIJVENZONE MACHELEN CARGO BUILDING 706 BOX 3 ROOM 0766 1830 MACHELEN BELGIUM",
+    "phone": "+32 2 709 06 00",
+    "email": "bru@airlogisticsgroup.com",
+    "website": "https://www.airlogisticsgroup.com"
+  },
+  "BTS": {
+    "address": "Air Logistics s.r.o., Pestovateľská 134/2, 82104 Bratislava",
+    "email": "bts@airlogisticsgroup.com",
+    "company": "Air Logistics s.r.o."
+  },
+  "BUD": {
+    "address": "1182 Budapest, Ulloi út 553, Hungary",
+    "phone": "(+36) 1770 7470",
+    "email": "bud@airlogistics.hu"
+  },
+  "CAI": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, Office # 106 A, CACC Complex, New Cargo City, Building CT1, Office 07/1A 2nd Floor, Cairo"
+  },
+  "CAN": {
+    "address": "Room 22D, Annex Tower Guangdong International Plaza 339 Huanshi Road East, Yuexiu District, Guangzhou China",
+    "email": "can@airlogisticsgroup.com"
+  },
+  "CDG": {
+    "address": "AIR CARGO LOGISTICS SARL, 6 RUE DU PAVE - CARGO 7 BAT 3220- 95703 ROISSY CDG",
+    "phone": "+33 1 7003 8086",
+    "email": "paris@aircargologistics.fr",
+    "company": "AIR CARGO LOGISTICS SARL"
+  },
+  "CGK": {
+    "partner": "Partner Office",
+    "address": "SUITE K, 3rd FLOOR, WISMA SOEWARNA, SOEWARNA BUSINESS PARK, BLOCK E LOT 1 & 2, SOEKARNO HATTA INTERNATIONAL AIRPORT, JAKARTA - INDONESIA",
+    "phone": "(+62) 21 55 911311"
+  },
+  "CGN": {
+    "address": "Air Logistics Gmbh, Cologne, Germany",
+    "phone": "+49 (0) 173 5496 571",
+    "email": "cgn@airlogistics.de",
+    "company": "Air Logistics Gmbh"
+  },
+  "CGO": {
+    "address": "Room 415, Domestic Cargo Terminal Bldg, Xinzheng International Airport, Zhengzhou City, Henan Province",
+    "email": "cgo@airlogisticsgroup.com"
+  },
+  "CKG": {
+    "address": "Room 232, 23rd Floor, 4th Building Vof Xinke Intl Building, no.99 Junyu Avenue. Yubei Distrct, Chongqing, China",
+    "email": "ckg@airlogisticsgroup.com"
+  },
+  "CMB": {
+    "address": "Level 5, East Low Block, World Trade Center, Colombo 01, Sri Lanka",
+    "phone": "+94 773104323",
+    "email": "nimali.perera@airlogisticsgroup.com"
+  },
+  "CMN": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, Boulevard Zoulikha Nasri, Florida Centre Park, Lot 9 Bureau 38, 6 eme etage Sidi maarouf, Casablanca"
+  },
+  "CPH": {
+    "address": "NORTH AIR LOGISTICS, AMAGER STRANDVEJ 418, DK-2770, KASTRUP, DENMARK",
+    "phone": "+45 32 52 76 00",
+    "email": "cph@northairlogistics.dk",
+    "website": "https://www.northairlogistics.com",
+    "company": "NORTH AIR LOGISTICS"
+  },
+  "CTU": {
+    "address": "Room 8-1319, City Spring, No 388 Yizhou Avenue, North Section, Hi-Tech District Chengdu, China",
+    "email": "ctu@airlogisticsgroup.com"
+  },
+  "DAD": {
+    "address": "11 floor, Summit Tower, 350 Nguyen Van Linh Str, Thanh Khe Ward, Da Nang City, Viet Nam",
+    "phone": "(+84) 969102858",
+    "email": "max.huy@airlogisticsgroup.com"
+  },
+  "DEL": {
+    "address": "# 2D, 5th Floor, Augusta Point Golf Course Road, Sector-53 Gurgaon-122002 NCR, India",
+    "phone": "(+91) 12 4479 7500",
+    "email": "india@airlogisticsgroup.co.in"
+  },
+  "DPS": {
+    "partner": "Partner Office",
+    "address": "Gedung Pelni, 3rd floor, Jl. Raya Kuta 299, Bali, Denpasar, Indonesia",
+    "phone": "(+62) 361 7809147",
+    "email": "dps_sales@victoriaaviationservices.com"
+  },
+  "DUB": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, Unit 12, 62 Main Street, Applewood, Swords, Co.Dublin, Ireland"
+  },
+  "DXB": {
+    "address": "Floor 8, Unit G, Silver Tower, Cluster I, JLT, Dubai",
+    "email": "uae@airlogisticsgroup.com"
+  },
+  "EMA": {
+    "address": "Donington Court Pegasus Business Park Castle Donington DE74 2UZ",
+    "phone": "(+44) 1332 850021",
+    "email": "sales@airlogistics.co.uk"
+  },
+  "FCO": {
+    "address": "Cargo City, Ingresso 5 piano 2, Piazzale Caduti Italiani in Bosnia, 00050 Fiumicino Aeroporto",
+    "phone": "(+39) 06 6595 27 307",
+    "email": "sales.it@airlogisticsgroup.com"
+  },
+  "FRA": {
+    "address": "AIR LOGISTICS GmbH, Am Prime Parc 2a, 65479 Raunheim, Germany",
+    "phone": "+49 6142 789320",
+    "email": "fra@airlogistics.de",
+    "company": "AIR LOGISTICS GmbH"
+  },
+  "HAM": {
+    "address": "Air Logistics Gmbh, Hamburg, Germany",
+    "phone": "+49 (0) 173 5496 564",
+    "email": "ham@airlogistics.de",
+    "company": "Air Logistics Gmbh"
+  },
+  "HAN": {
+    "address": "Room 343, ALS Cargo Terminal, Noi Bai Int'l Airport, Noi Bai commune, , Hanoi, Vietnam",
+    "phone": "(+84) 943777123",
+    "email": "alex.binh@airlogisticsgroup.com"
+  },
+  "HEL": {
+    "address": "NORTH AIR LOGISTICS, AIRSIDE CENTER, RAHTITIE 3, 01530 FINLAND",
+    "phone": "(+46) 8 593 60085",
+    "email": "hel@northairlogistics.fi",
+    "company": "NORTH AIR LOGISTICS"
+  },
+  "HGH": {
+    "address": "Room 713, No 630 Feijiatang Road, Xiacheng District, Hangzhou, China",
+    "email": "hgh@airlogisticsgroup.com"
+  },
+  "HKG": {
+    "address": "AIR LOGISTICS LIMITED, 705, 7th FLOOR, TOWER II, CHEUNG SHA WAN PLAZA, 833 CHEUNG SHA WAN ROAD, KOWLOON, HONG KONG",
+    "phone": "(+852) 2328 0278",
+    "email": "hkgsales@airlogisticsgroup.com",
+    "company": "AIR LOGISTICS LIMITED"
+  },
+  "IAD": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, 23703 C AIR FREIGHT LANE, SUITE 214 BUILDING 6, DULLES, VA 20166, USA"
+  },
+  "IAH": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, 19115 LEE ROAD, BUILDING-D, #227, HUMBLE, TX77338, USA"
+  },
+  "ICN": {
+    "address": "Room 1501, 15 Floor, Hanwha BizMetro II, 551-24 Yangcheon-ro, Gangseo-gu, Seoul, Korea",
+    "phone": "(+82) 02 702 4008",
+    "email": "sel@airlogisticsgroup.com"
+  },
+  "ISB": {
+    "address": "Office # 08, Mezzanine Floor Gerry’s Dnata Cargo Complex, Islamabad International Airport, Pakistan",
+    "phone": "+92 51 5905 5930",
+    "email": "sadat.mateen@airlogisticsgroup.com"
+  },
+  "JFK": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, 70 SUNRISE HWY, SUITE 500, VALLEY STREAM, NY11581, USA"
+  },
+  "JNB": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, 21 POMONA ROAD, (CORNER CONSTANTIA ROAD), POMONA 1619, KEMPTON PARK, SOUTH AFRICA"
+  },
+  "KHI": {
+    "address": "M-41(b) MEZZANINE FLOOR, 1CF 1-5, SHAHRAH-E-FIRDAUSI, PARK TOWER, CLIFTON KARACHI- 75600",
+    "phone": "+92 21 3537 0271 / 5",
+    "email": "imranp@airlogisticsgroup.com"
+  },
+  "KIX": {
+    "address": "2F DAISEN BLDG., 2-1-10 IMABASHI CHUO-KU, OSAKA-SHI, OSAKA 541-0042 JAPAN",
+    "phone": "(+81) 6 6121 2311",
+    "email": "algjapan@airlogisticsgroup.com"
+  },
+  "KMG": {
+    "address": "ROOM 201, UNIT 2 SHENHUA GARDEN NO. 5 SPRING CITY ROAD KUNMING 650200, CHINA",
+    "email": "kmg@airlogisticsgroup.com"
+  },
+  "KUL": {
+    "address": "Lot GFM 027, MAS Advanced Cargo Centre Kuala Lumpur International Airport, 64000 Sepang, Selangor Malaysia.",
+    "phone": "+603 87871868"
+  },
+  "LHE": {
+    "address": "Mezzaine Floor, Plaza # 93K DHA Phase 1, Lahore - Pakistan",
+    "phone": "+92 322-4588738",
+    "email": "sohailp@airlogisticsgroup.com"
+  },
+  "LHR": {
+    "address": "BUILDING 550B, SHOREHAM ROAD EAST, HEATHROW AIRPORT HOUNSLOW, MIDDLESEX TW6 3UA",
+    "phone": "(+44) 208 759 1083",
+    "email": "sales@airlogistics.co.uk"
+  },
+  "LIS": {
+    "address": "AIR LOGISTICS GSA. SA, EDIFICIO 134, 2 PISO, GABINETE 2217, AEROPORTO DE LISBOA, TERMINAL DE CARGA, 1700-008 LISBON, PORTUGAL",
+    "phone": "(+351) 21 847 5749",
+    "email": "bookings.pt@airlogisticsgroup.com",
+    "company": "AIR LOGISTICS GSA. SA"
+  },
+  "LNZ": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, Flughafenstrasse 3,, A-4063 Hörsching, Austria"
+  },
+  "MAA": {
+    "address": "686, 2B, 9TH FLOOR, SEETHAKATHI BUSINESS CENTRE, ANNA SALAI, THOUSAND LIGHTS, CHENNAI, 600006",
+    "phone": "(+91) 44 48689102-104",
+    "email": "india@airlogisticsgroup.co.in"
+  },
+  "MAD": {
+    "address": "CALLE PLAYA DE RIAZOR, 12, PLANTA 1, OFICINA 5, AEROPUERTO DE MADRID BARAJAS, 28042 MADRID, SPAIN",
+    "phone": "(+34) 91 329 6190",
+    "email": "reservas@airlogisticsgroup.com"
+  },
+  "MAN": {
+    "phone": "(+44) 0161 485 1016",
+    "email": "sales@airlogistics.co.uk"
+  },
+  "MEL": {
+    "partner": "Partner Office",
+    "address": "C/O ACP Worldwide, G8, The Terminal ,72 Hargrave Ave, Essendon Fields, Victoria 3041",
+    "email": "sales@acpworldwide.com.au"
+  },
+  "MEX": {
+    "address": "Montecito #38, WTC, 27th floor, office 28, int. 30-A, Col. Nápoles, Delg. Benito Juárez, 03810 CDMX - México",
+    "email": "sales.mx@airlogisticsgroup.com"
+  },
+  "MNL": {
+    "address": "ROOM E-309 3RD FLOOR PAIR/PAGSS CENTER, NAIA AVENUE, PARANAQUE CITY, METRO MANILA, PHILIPPINES 1700",
+    "phone": "(+632) 8854 5836 / 8836 9426",
+    "email": "erich.lingad@airlogisticsgroup.com.ph"
+  },
+  "MUC": {
+    "address": "Air Logistics Gmbh, Am Soeldnermoos 17, D-85399 Hallbergmoos, Germany",
+    "phone": "+49 811 9989 8512 / +49 (0) 173 549 6555",
+    "email": "muc@airlogistics.de",
+    "company": "Air Logistics Gmbh"
+  },
+  "MIL": {
+    "address": "VIA MODIGLIANI 45, EDIF. IL QUADRATO, 20054 SEGRATE - MI",
+    "phone": "(+39) 02 2187 1515",
+    "email": "sales.it@airlogisticsgroup.com"
+  },
+  "MXP": {
+    "address": "Cargo City, Torre B, 3 Piano, Malpensa Airport, 21010 Malpensa (VA)",
+    "phone": "+39 02 7486 7317",
+    "email": "opsmxp@airlogisticsgroup.com"
+  },
+  "NBO": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, OFFICE 22, SIGINON CARGO CENTRE, JKIA CARGO COMPLEX, PO BOX 10719-00100, NAIROBI, KENYA"
+  },
+  "NGB": {
+    "address": "ROOM 119, FREIGHT FORWARDING BUSINESS CENTER, NINGBO LISHE INTERNATIONAL AIRPORT NINGBO, CHINA",
+    "email": "ngb@airlogisticsgroup.com"
+  },
+  "NGO": {
+    "address": "4F HIROKOJI GARDEN AVENUE, 4-24-16 MEIEKI NAKAMURA-KU NAGOYA-SHI, AICHI 450-0002 JAPAN",
+    "phone": "(+81) 52 856 9622",
+    "email": "algjapan@airlogisticsgroup.com"
+  },
+  "NKG": {
+    "address": "Room 868 Jinling Asia Pacific Tower Center No. 2 Hangzhona Road, Gulou District Nanjing, China",
+    "email": "nkg@airlogisticsgroup.com"
+  },
+  "NRT": {
+    "address": "3F KOURA #1 BUILDING, 1-1-6 NIHONBASHI KAYABACHO CHUO-KU, TOKYO 103-0025, JAPAN",
+    "phone": "(+81) 3 5645 7820",
+    "email": "algjapan@airlogisticsgroup.com"
+  },
+  "OPO": {
+    "address": "AIR LOGISTICS GSA S.A, AEROPORTO FRANCISCO SA CARNEIRO, TERMINAL DE CARGA, P3 SL319, 4470 528 MAIA, PORTUGAL",
+    "phone": "(+351) 229 481 936",
+    "email": "bookings.pt@airlogisticsgroup.com",
+    "company": "AIR LOGISTICS GSA S.A"
+  },
+  "ORD": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, SUITE 460 EAST, ONE PIERCE PLACE, ITASCA, IL 60143, USA"
+  },
+  "OSL": {
+    "address": "NORTH AIR LOGISTICS, EDVARD GRIEGSVEI 45, N-2060 GARDERMOEN, NORWAY",
+    "phone": "(+45) 32527600",
+    "email": "osl@northairlogistics.no",
+    "company": "NORTH AIR LOGISTICS"
+  },
+  "PEK": {
+    "address": "Room 302, 3/F Building 6, Yard 2, Jinsui Road Shunyi District Beijing, China",
+    "phone": "+86 10 5326 9526",
+    "email": "pek@airlogisticsgroup.com"
+  },
+  "PER": {
+    "partner": "Partner Office",
+    "address": "C/O ACP Worldwide Perth Cargo Centre 4 Anson Road Perth International Airport WA 6105",
+    "email": "perthsales@acpworldwide.com.au"
+  },
+  "PRG": {
+    "address": "AIRPORT BUSINESS CENTER, 2ND FLOOR SECTION B, AVIATICKÃ 1048/12, 168 00, PRAHA 6, CZECH REPUBLIC",
+    "phone": "+420 222 351 740",
+    "email": "prg@airlogistics.cz"
+  },
+  "PVG": {
+    "address": "Room 3616, Zhongyi Building, No. 580, West Nanjing Road, Jing'an District, Shanghai, China",
+    "phone": "(+86) 21 6075 9890",
+    "email": "pvg@airlogisticsgroup.com"
+  },
+  "SCL": {
+    "partner": "Partner Office",
+    "address": "C/O HAE, AV. AMERICO VESPUCIO 1309, OFICINA 308, PARQUE INDUSTRIAL ENEA, PUDAHUEL, SANTIAGO, CHILE",
+    "phone": "+56 (2) 3263 9420"
+  },
+  "SGN": {
+    "address": "52 Truong Son Street, Tan Son Hoa Ward, Ho Chi Minh, Vietnam",
+    "phone": "(+84) 936736969",
+    "email": "alex.hao@airlogisticsgroup.com"
+  },
+  "SIN": {
+    "address": "Unit 05-22, Cargo Agents Building D, 9 Airline Road, Changi Airfreight Centre, Singapore 819827",
+    "phone": "(+65) 6214 2194",
+    "email": "ronnie.chew@airlogisticsgroup.com"
+  },
+  "SUB": {
+    "partner": "Partner Office",
+    "address": "Intiland Tower 6th Floor Suite 2D, Jl. Panglima Sudirman 101 - 103, Surabaya 60271, Indonesia",
+    "phone": "(+62) 31 5346871"
+  },
+  "SYD": {
+    "partner": "Partner Office",
+    "address": "C/O ACP Worldwide Suite 2003B Level 2 376 Bay street Brighton Le Sands NSW 2216",
+    "email": "sydsales@acpworldwide.com.au"
+  },
+  "TBS": {
+    "address": "TBILISI INTERNATIONAL AIRPORT, LASARE CARGO TERMINAL, II FLOOR, ROOM 205, TBILISI, Georgia",
+    "phone": "+995 577 319400",
+    "email": "tbs@airlogisticsgroup.com"
+  },
+  "TLV": {
+    "address": "SUITE 380, SWISSPORT BUILDING, BEN GURION AIRPORT 701000",
+    "phone": "(+972) 3-9731203",
+    "email": "tlv@airlogisticsgroup.com"
+  },
+  "TSN": {
+    "address": "Room 2939, Level 29, The Exchange Tower 2, 189 Nanjing Road, Heping District, Tianjin 300051, China",
+    "email": "tsn@airlogisticsgroup.com"
+  },
+  "VIE": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, Building 263/ Entrance 2 / 1st floor,, A-1300 Airport Vienna, Austria"
+  },
+  "VLC": {
+    "address": "Avenida Alemania 11, 46, 9-10, Ribaroja del Turia, 46910 Valencia",
+    "email": "reservas@airlogisticsgroup.com"
+  },
+  "WAW": {
+    "address": "UI. Komitetu Obrony Robotnikow 56 02-146 Warszawa, Poland",
+    "phone": "+48 223313 090",
+    "email": "waw@airlogistics.pl"
+  },
+  "WUH": {
+    "address": "Room A603-1, Logistics Center Building, North Third Road, Tianhe Airport, Huangpi District, Wuhan, Hubei, China",
+    "email": "wuh@airlogisticsgroup.com"
+  },
+  "XIY": {
+    "address": "Room 203, A03 Building Xian Xian Yang Airport Intl Cargo Terminal Xian City, Shanxi Province, China 710082",
+    "email": "xiy@airlogisticsgroup.com"
+  },
+  "ZAG": {
+    "partner": "Partner Office",
+    "address": "C/O ASN, Grad Velika Gorica, Ulica Rudolfa Fizira 7, P.O.B. 27 HR-10150 Zagreb Airport, Croatia"
+  },
+  "ZAZ": {
+    "address": "Zaragoza Airport 50190 Zaragoza Spain",
+    "email": "fashion@airlogisticsgroup.com"
+  },
+  "ZRH": {
+    "address": "FLUGHOFSTRASSE 42, CH - 8152 GLATTBRUGG, SWITZERLAND",
+    "phone": "(+41) 43 211 6352",
+    "email": "ZRH@airborne-intl.com"
+  }
+}

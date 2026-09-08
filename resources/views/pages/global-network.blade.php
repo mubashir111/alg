@@ -4,6 +4,9 @@
     $json = file_get_contents(resource_path('js/global-network-data.json'));
     $data = json_decode($json, true);
     
+    $detailsFile = resource_path('js/global-network-details.json');
+    $detailsData = file_exists($detailsFile) ? json_decode(file_get_contents($detailsFile), true) : [];
+    
     // Order of regions as per React app
     $regionOrder = [
         "Europe",
@@ -362,12 +365,13 @@
           LHR
         </div>
         <button class="w-fit p-2 text-[#667980] hover:text-[#FFFFFF] bg-[#F0F5F7] hover:bg-[#103440] Hover-effect rounded-full cursor-pointer panel-close" type="button" aria-label="Close">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path></svg>
         </button>
       </div>
       <div class="flex flex-col">
         <div class="flex gap-3 items-center">
           <p id="panel-city" class="font-transducer font-normal Large-text text-[#103440] tracking-[-1px] uppercase">London</p>
+          <p id="panel-partner" class="font-transducer font-normal Little-text text-[#36A5C2] tracking-[-0.2px] uppercase hidden"></p>
         </div>
         <p id="panel-location" class="font-normal Small-text text-[#667980] capitalize">
           United Kingdom · Europe
@@ -375,17 +379,7 @@
       </div>
     </div>
     <div class="w-full mt-4 border-t-[1px] border-[#1034401A]"></div>
-    <div class="w-full h-full overflow-hidden overflow-y-scroll custom-scrollbar pr-2 mt-4 flex flex-col gap-4">
-      <div class="flex flex-col gap-4 items-center mt-4">
-        <div class="w-full p-3 md:p-5 border-[2px] border-[#F0F5F7] rounded-[16px]">
-          <p class="font-normal Medium-text text-[#103440]">
-            Full team and contact details for this station are available on request. Reach our central team and we'll connect you with the right local office.
-          </p>
-        </div>
-        <button class="w-fit py-3 px-6 font-normal tracking-[0.2px] Small-text bg-[#103440] text-white rounded-[100px] hover:bg-[#36A5C2] transition-colors panel-close">
-          Get in touch
-        </button>
-      </div>
+    <div id="panel-body" class="w-full h-full overflow-hidden overflow-y-scroll custom-scrollbar Hide-scrollBar">
     </div>
   </div>
 </div>
@@ -542,6 +536,7 @@
 @push('scripts')
 <script>
     window.NETWORK_DATA = {!! json_encode($data) !!};
+    window.NETWORK_DETAILS = {!! json_encode($detailsData) !!};
     window.REGION_ORDER = {!! json_encode($regionOrder) !!};
 
     function toggleHeadOffice(titleSlug) {

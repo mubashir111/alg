@@ -589,37 +589,258 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Panel
+    // Panel & Details Resolution
+    const DETAILS = window.NETWORK_DETAILS || {};
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
+    const COUNTRY_EMAIL = (() => {
+        const tallies = {};
+        if (DATA && DATA.regions) {
+            Object.values(DATA.regions).forEach(r => {
+                if (r.countries) {
+                    r.countries.forEach(c => {
+                        if (c.cities) {
+                            c.cities.forEach(ct => {
+                                const d = DETAILS[ct.code];
+                                const e = d ? d.email : null;
+                                if (e) {
+                                    tallies[c.country] = tallies[c.country] || {};
+                                    tallies[c.country][e] = (tallies[c.country][e] || 0) + 1;
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+        const out = {};
+        Object.entries(tallies).forEach(([country, counts]) => {
+            out[country] = Object.entries(counts).sort(
+                (a, b) => b[1] - a[1] || a[0].localeCompare(b[0])
+            )[0][0];
+        });
+        return out;
+    })();
+
+    function resolveOfficeEmail(code, country) {
+        const d = DETAILS[code];
+        return (d && d.email) || COUNTRY_EMAIL[country] || null;
+    }
+
+    function officeHasDetail(code, country) {
+        const d = DETAILS[code] || {};
+        const email = resolveOfficeEmail(code, country);
+        return !!(
+            (d.contacts && d.contacts.length) ||
+            d.partner ||
+            d.address ||
+            d.phone ||
+            email ||
+            d.website ||
+            d.company
+        );
+    }
+
     const panel = document.getElementById('detailPanel');
     const overlay = document.getElementById('panelOverlay');
     const panelClose = document.querySelectorAll('.panel-close');
     
+    function renderDetailPanel(code, pin) {
+        const codeUpper = code.toUpperCase();
+        const details = DETAILS[codeUpper] || {};
+        const country = pin.country;
+        const email = resolveOfficeEmail(codeUpper, country);
+        const hasDetail = officeHasDetail(codeUpper, country);
+
+        const panelCode = document.getElementById('panel-code');
+        const panelCity = document.getElementById('panel-city');
+        const panelPartner = document.getElementById('panel-partner');
+        const panelLocation = document.getElementById('panel-location');
+        const panelBody = document.getElementById('panel-body');
+
+        if (panelCode) panelCode.textContent = pin.code;
+        if (panelCity) panelCity.textContent = pin.city;
+        
+        if (panelPartner) {
+            if (details.partner) {
+                panelPartner.textContent = `(${details.partner})`;
+                panelPartner.classList.remove('hidden');
+            } else {
+                panelPartner.textContent = '';
+                panelPartner.classList.add('hidden');
+            }
+        }
+
+        if (panelLocation) {
+            panelLocation.innerHTML = `<span>${pin.country}</span> <span>·</span> <span>${pin.region}</span>`;
+        }
+
+        if (!panelBody) return;
+
+        if (hasDetail) {
+            let html = '';
+
+            // Contacts / Team
+            if (details.contacts && details.contacts.length > 0) {
+                html += `
+                    <div class="py-4 flex flex-col gap-2 font-normal Small-text">
+                        <div class="text-[#9FACB1]">Team</div>
+                        ${details.contacts.map(c => `
+                            <div class="w-full p-3 md:p-5 border-[2px] border-[#F0F5F7] flex flex-col gap-3 rounded-[16px]">
+                                <div class="font-transducer font-medium text-[#103440] tracking-[-0.2px] uppercase">${escapeHtml(c.name)}</div>
+                                <div class="text-[#667980]">${escapeHtml(c.title)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            html += `<div class="flex flex-col divide-y-[1px] divide-[#1034401A]">`;
+
+            // Office / Address
+            if (details.company || details.address) {
+                html += `
+                    <div class="py-4 flex gap-4 items-start">
+                        <div class="shrink-0">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" height="18" width="18" class="text-[#36A5C2]"><path d="M 16 3 C 10.488281 3 6 7.488281 6 13 C 6 14.894531 6.640625 16.714844 7.625 18.28125 C 7.691406 18.390625 7.777344 18.484375 7.84375 18.59375 L 15.28125 28.53125 C 15.457031 28.769531 15.722656 28.917969 16.019531 28.929688 C 16.316406 28.941406 16.59375 28.816406 16.78125 28.59375 L 24.21875 18.59375 C 24.269531 18.511719 24.335938 18.441406 24.375 18.34375 C 25.394531 16.757813 26 14.914063 26 13 C 26 7.488281 21.511719 3 16 3 Z M 16 5 C 20.429688 5 24 8.570313 24 13 C 24 14.542969 23.515625 16.035156 22.65625 17.3125 L 16 26.1875 L 9.34375 17.3125 C 8.507813 16.054688 8 14.558594 8 13 C 8 8.570313 11.570313 5 16 5 Z M 16 9 C 13.789063 9 12 10.789063 12 13 C 12 15.210938 13.789063 17 16 17 C 18.210938 17 20 15.210938 20 13 C 20 10.789063 18.210938 9 16 9 Z M 16 11 C 17.117188 11 18 11.882813 18 13 C 18 14.117188 17.117188 15 16 15 C 14.882813 15 14 14.117188 14 13 C 14 11.882813 14.882813 11 16 11 Z"></path></svg>
+                        </div>
+                        <div class="flex flex-col gap-1 items-start font-normal Small-text">
+                            <p class="text-[#9FACB1]">Office</p>
+                            ${details.company ? `<p class="font-transducer text-[#103440] tracking-[-0.2px] uppercase">${escapeHtml(details.company)}</p>` : ''}
+                            ${details.address ? `<p class="text-[#667980] capitalize">${escapeHtml(details.address)}</p>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Phone
+            if (details.phone) {
+                const phoneClean = details.phone.replace(/\s/g, '');
+                html += `
+                    <div class="py-4 flex gap-4 items-start">
+                        <div class="shrink-0">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="18" width="18" class="text-[#36A5C2]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><polyline points="23 2 16 2 16 9"></polyline><line x1="23" y1="2" x2="16" y2="9"></line></svg>
+                        </div>
+                        <div class="flex flex-col gap-1 items-start font-normal Small-text">
+                            <p class="text-[#9FACB1]">Phone</p>
+                            <a href="tel:${escapeHtml(phoneClean)}" class="text-[#103440] hover:text-[#36A5C2] Hover-effect">
+                                ${escapeHtml(details.phone)}
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Email
+            if (email) {
+                html += `
+                    <div class="py-4 flex gap-4 items-start">
+                        <div class="shrink-0">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="18" width="18" class="text-[#36A5C2]"><rect width="416" height="320" x="48" y="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="40" ry="40"></rect><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m112 160 144 112 144-112"></path></svg>
+                        </div>
+                        <div class="flex flex-col gap-1 items-start font-normal Small-text">
+                            <p class="text-[#9FACB1]">Email</p>
+                            <a href="mailto:${escapeHtml(email)}" class="text-[#103440] hover:text-[#36A5C2] Hover-effect">
+                                ${escapeHtml(email)}
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Website
+            if (details.website) {
+                const webDisplay = details.website.replace(/^https?:\/\//, '');
+                html += `
+                    <div class="py-4 flex gap-4 items-start">
+                        <div class="shrink-0">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" height="18" width="18" class="text-[#36A5C2]"><path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 18.066406 5 20.007813 5.679688 21.625 6.8125 C 20.738281 7.742188 19.539063 8.761719 18.09375 9.875 C 16.292969 8.167969 14.28125 6.441406 12.375 5.5625 C 13.515625 5.203125 14.730469 5 16 5 Z M 10.28125 6.34375 C 12.199219 7.273438 14.246094 9.070313 16.09375 10.84375 C 14.226563 12.390625 12.316406 13.910156 10.46875 15.34375 C 10.28125 14.394531 10.15625 13.398438 10.09375 12.375 C 8.648438 12.195313 7.027344 12.128906 5.34375 12.1875 C 6.269531 9.472656 8.042969 7.425781 10.28125 6.34375 Z M 5.09375 14.1875 C 6.851563 14.125 8.523438 14.195313 10.03125 14.375 C 10.03125 15.421875 10.09375 16.488281 10.25 17.53125 C 8.441406 18.96875 6.640625 20.375 4.90625 21.6875 C 4.339844 19.957031 4 18.027344 4 16 C 4 15.382813 4.035156 14.78125 5.09375 14.1875 Z"></path></svg>
+                        </div>
+                        <div class="flex flex-col gap-1 items-start font-normal Small-text">
+                            <p class="text-[#9FACB1]">Website</p>
+                            <a href="${escapeHtml(details.website)}" target="_blank" rel="noopener noreferrer" class="text-[#103440] hover:text-[#36A5C2] Hover-effect">
+                                ${escapeHtml(webDisplay)}
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += `</div>`;
+            panelBody.innerHTML = html;
+        } else {
+            panelBody.innerHTML = `
+                <div class="mt-4 flex flex-col gap-4 items-center">
+                    <div class="w-full p-3 md:p-5 border-[2px] border-[#F0F5F7] rounded-[16px]">
+                        <p class="font-normal Medium-text text-[#103440]">
+                            Full team and contact details for this station are available on request. Reach our central team and we'll connect you with the right local office.
+                        </p>
+                    </div>
+                    <button onclick="if(typeof openContactModal === 'function') openContactModal(); closePanel();" class="w-fit py-3 px-6 font-normal tracking-[0.2px] Small-text BD-button">
+                        Get in touch
+                    </button>
+                </div>
+            `;
+        }
+    }
+
     window.openOffice = (code) => {
-        const pin = DATA.pins.find(p => p.code.toLowerCase() === code.toLowerCase());
+        if (!code) return;
+        let pin = DATA.pins.find(p => p.code.toLowerCase() === code.toLowerCase());
+        if (!pin) {
+            for (const [regionName, regionData] of Object.entries(DATA.regions || {})) {
+                for (const c of (regionData.countries || [])) {
+                    const cityEntry = (c.cities || []).find(ct => ct.code.toLowerCase() === code.toLowerCase());
+                    if (cityEntry) {
+                        pin = {
+                            code: cityEntry.code,
+                            city: cityEntry.city,
+                            country: c.country,
+                            region: regionName
+                        };
+                        break;
+                    }
+                }
+                if (pin) break;
+            }
+        }
         if (!pin) return;
         
         // Remove selection
-        pins.forEach(p => p.classList.remove('sel'));
-        const activePin = document.querySelector(`.pin[data-code="${code.toLowerCase()}"]`);
-        if (activePin) activePin.classList.add('sel');
+        if (pinsContainer) {
+            pinsContainer.querySelectorAll('.pin').forEach(p => p.classList.remove('sel'));
+            const activePin = pinsContainer.querySelector(`.pin[data-code="${code.toLowerCase()}"]`);
+            if (activePin) activePin.classList.add('sel');
+        }
 
-        document.getElementById('panel-code').textContent = pin.code;
-        document.getElementById('panel-city').textContent = pin.city;
-        document.getElementById('panel-location').textContent = `${pin.country} · ${pin.region}`;
+        renderDetailPanel(code, pin);
         
         panel.classList.add('open');
         overlay.classList.add('show');
-        flyToPin(pin);
+        if (typeof pin.x === 'number' && typeof pin.y === 'number') {
+            flyToPin(pin);
+        }
     };
 
-    function closePanel() {
+    window.closePanel = () => {
         panel.classList.remove('open');
         overlay.classList.remove('show');
-        pins.forEach(p => p.classList.remove('sel'));
-    }
+        if (pinsContainer) {
+            pinsContainer.querySelectorAll('.pin').forEach(p => p.classList.remove('sel'));
+        }
+    };
 
-    panelClose.forEach(btn => btn.addEventListener('click', closePanel));
-    overlay.addEventListener('click', closePanel);
+    panelClose.forEach(btn => btn.addEventListener('click', window.closePanel));
+    overlay.addEventListener('click', window.closePanel);
     
     document.querySelectorAll('.office-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -628,6 +849,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closePanel();
+        if (e.key === 'Escape') window.closePanel();
     });
 });
